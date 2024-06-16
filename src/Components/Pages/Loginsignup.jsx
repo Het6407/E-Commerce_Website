@@ -1,8 +1,13 @@
 import React from 'react'
 import './Loginsignup.css'
+import Header from '../header'
+import '../head.css'
+import { Link } from 'react-router-dom'
 const Loginsignup = () => {
   return (
-   
+   <>
+    <Header/>
+ 
     <div class="wrapper">
     <div class="title">
        Login Form
@@ -29,10 +34,11 @@ const Loginsignup = () => {
           <input type="submit" value="Login"/>
        </div>
        <div class="signup-link">
-          Not a member? <a href="#">Signup now</a>
+          Not a member? <Link to ="/Signup">Signup now</Link>
        </div>
     </form>
  </div>
+ </>
   )
 }
 
